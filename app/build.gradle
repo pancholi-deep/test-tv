@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.deep.glassredirector'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.deep.glassredirector'
+        minSdk 25
+        // Keep target at 25 for compatibility with Fire OS 6 / Android 7.1.
+        targetSdk 25
+        versionCode 1
+        versionName '1.0'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
